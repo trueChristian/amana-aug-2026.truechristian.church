@@ -301,9 +301,15 @@ type VideoFilter = "all" | "camp" | "songs";
 function GlobalHeader({ onOpenVideos }: { onOpenVideos: () => void }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [headerHidden, setHeaderHidden] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const navigationRef = useRef<HTMLElement>(null);
+  const lastScrollYRef = useRef(0);
+  const directionStartYRef = useRef(0);
+  const scrollDirectionRef = useRef<-1 | 0 | 1>(0);
+  const scrollFrameRef = useRef<number | null>(null);
 
   const closeMenu = (restoreFocus = false) => {
     const shouldRestoreFocus = restoreFocus && menuOpen;
@@ -360,8 +366,51 @@ function GlobalHeader({ onOpenVideos }: { onOpenVideos: () => void }) {
     };
   }, [isMobile, menuOpen]);
 
+  useEffect(() => {
+    const initialY = Math.max(0, window.scrollY);
+    lastScrollYRef.current = initialY;
+    directionStartYRef.current = initialY;
+    scrollDirectionRef.current = 0;
+    if (menuOpen) setHeaderHidden(false);
+
+    const updateHeader = () => {
+      scrollFrameRef.current = null;
+      const currentY = Math.max(0, window.scrollY);
+      const delta = currentY - lastScrollYRef.current;
+      const nextDirection: -1 | 0 | 1 = delta > 0 ? 1 : delta < 0 ? -1 : scrollDirectionRef.current;
+
+      if (nextDirection !== scrollDirectionRef.current) {
+        scrollDirectionRef.current = nextDirection;
+        directionStartYRef.current = lastScrollYRef.current;
+      }
+
+      const distanceInDirection = Math.abs(currentY - directionStartYRef.current);
+      const headerHeight = headerRef.current?.offsetHeight ?? 81;
+
+      if (currentY <= 4 || menuOpen) {
+        setHeaderHidden(false);
+      } else if (nextDirection === 1 && currentY > headerHeight && distanceInDirection >= 12) {
+        setHeaderHidden(true);
+      } else if (nextDirection === -1 && distanceInDirection >= 8) {
+        setHeaderHidden(false);
+      }
+
+      lastScrollYRef.current = currentY;
+    };
+
+    const onScroll = () => {
+      if (scrollFrameRef.current === null) scrollFrameRef.current = window.requestAnimationFrame(updateHeader);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (scrollFrameRef.current !== null) window.cancelAnimationFrame(scrollFrameRef.current);
+    };
+  }, [menuOpen]);
+
   return (
-    <header className="tcc-site-header tm-header" data-tcc-global-header data-menu-open={menuOpen ? "true" : undefined}>
+    <header ref={headerRef} className="tcc-site-header tm-header" data-tcc-global-header data-menu-open={menuOpen ? "true" : undefined} data-scroll-hidden={headerHidden && !menuOpen ? "true" : undefined} onFocusCapture={() => setHeaderHidden(false)}>
       <div className="tcc-header__container tcc-container">
         <a className="tcc-header__brand uk-logo" href="https://truechristian.church/" aria-label="Back to home">
           <img src="/assets/brand/logo.jpg" width="288" height="77" alt="A True Christian Church" />
@@ -440,12 +489,6 @@ function GlobalFooter() {
           <section className="tcc-footer-group tcc-footer-social" aria-labelledby="tcc-footer-social">
             <h2 id="tcc-footer-social">Social Outreach</h2>
             <div className="tcc-footer-social__links">
-              <a href="https://twitter.com/llewellynvdm" target="_blank" rel="noopener" aria-label="X / Twitter">
-                <svg className="tcc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" /></svg>
-              </a>
-              <a href="https://www.facebook.com/aTrueChristianChurch" target="_blank" rel="noopener" aria-label="Facebook">
-                <svg className="tcc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h3l.5-3.5h-3.5V8.25c0-1 .28-1.75 1.8-1.75H17V3.4c-.29-.04-1.29-.13-2.45-.13-2.43 0-4.05 1.48-4.05 4.2v3.03H8V14h2.5v8h3Z" /></svg>
-              </a>
               <a href="https://github.com/trueChristian" target="_blank" rel="noopener" aria-label="GitHub">
                 <svg className="tcc-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.57 22.02c.57.1.77-.25.77-.55v-2.16c-3.15.69-3.81-1.34-3.81-1.34-.51-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.39-1.23.72-1.51-2.51-.29-5.15-1.26-5.15-5.59 0-1.23.44-2.24 1.17-3.03-.12-.29-.51-1.44.11-2.99 0 0 .95-.3 3.11 1.16A10.8 10.8 0 0 1 12 6.09c.96 0 1.91.13 2.82.38 2.16-1.46 3.11-1.16 3.11-1.16.62 1.55.23 2.7.11 2.99.73.79 1.17 1.8 1.17 3.03 0 4.34-2.65 5.3-5.17 5.58.41.35.77 1.04.77 2.1v3.16c0 .3.21.66.78.55A11.3 11.3 0 0 0 12 .7Z" /></svg>
               </a>

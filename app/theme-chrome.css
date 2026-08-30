@@ -59,6 +59,18 @@
   z-index: 1000;
   top: 0;
   color: var(--tcc-color-ink);
+  transform: translateY(0);
+  transition: transform 220ms ease;
+  will-change: transform;
+}
+
+.tcc-site-header[data-scroll-hidden="true"] {
+  transform: translateY(calc(-100% - 1px));
+}
+
+.tcc-site-header[data-menu-open="true"],
+.tcc-site-header:focus-within {
+  transform: translateY(0);
 }
 
 .tcc-header__container {
@@ -395,6 +407,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .tcc-site-header,
   .tcc-site-header *,
   .tcc-site-header *::before,
   .tcc-site-header *::after {
