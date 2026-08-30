@@ -560,7 +560,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="page-title">
         <BackgroundVideo src="/media/video/hero-amana.mp4" poster="/media/video/hero-amana-poster.webp" immediate paused={backgroundPaused || videoOpen} />
         <div className="hero-scrim" />
-        <div className="hero-content" id="top"><p className="eyebrow">Amana Mission · Northern Namibia</p><h1 id="page-title">Amana Aug 2026 Camp Meeting</h1><p className="hero-date">21–23 August 2026</p><div className="hero-actions"><a className="scroll-cue" href="#main-content"><span>Follow the weekend</span><ArrowDown aria-hidden="true" /></a><button type="button" className="hero-video-button" onClick={() => openVideoLibrary("camp")}><Play /> Watch the videos</button></div></div>
+        <div className="hero-content" id="top"><p className="eyebrow">Amana Mission · Northern Namibia</p><h1 id="page-title">Amana Aug 2026 Camp Meeting</h1><p className="hero-date">21–23 August 2026</p><div className="hero-actions"><a className="scroll-cue" href="#journey"><span>Follow the weekend</span><ArrowDown aria-hidden="true" /></a><button type="button" className="hero-video-button" onClick={() => openVideoLibrary("camp")}><Play /> Watch the videos</button></div></div>
         <Button type="button" variant="outline" size="icon-lg" className="motion-control" onClick={() => setBackgroundPaused((current) => !current)} aria-label={backgroundPaused ? "Play background videos" : "Pause background videos"}>{backgroundPaused ? <Play /> : <Pause />}</Button>
       </section>
 
