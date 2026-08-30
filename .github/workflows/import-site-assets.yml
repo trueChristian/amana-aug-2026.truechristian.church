@@ -67,101 +67,101 @@ jobs:
               sha256sum --check --status
             mv "$tmp" "$path"
           done <<'ASSETS'
-69b53d5ff26b260efbc859887112a1be8ffc851c335befa3c47a2d3ae9aa53bf  public/assets/brand/logo.jpg
-2a28086f29f140828e2c1e03629a5d8306000c456453a9e6d25cf4ccfadb9a2d  public/assets/favicons/favicon.ico
-e21c5357ee6583efc20eb2c6c3926dfd89554a327cd2ea00518c9b3b7ca4f12a  public/assets/footer/city-skyline-reference.png
-2a28086f29f140828e2c1e03629a5d8306000c456453a9e6d25cf4ccfadb9a2d  public/favicon.ico
-e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7  public/favicon.svg
-1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307  public/file.svg
-d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9  public/globe.svg
-1f85ed3ee252673f7baa4d78eaf55df6b78c2f24d692433265063c5b17d79fff  public/media/backgrounds/drone-1.mp4
-11e9d26c1d3c8b12b1a495ac76593abeea2f6f71f9a3315075316896f465f616  public/media/backgrounds/drone-1.webp
-4c87465374070242a200275bebbb8046afe9e961fb08c89cde7cfa97162bc396  public/media/backgrounds/drone-2.mp4
-bd869be6e158391f4d5f5eebf9b71236be0c0c7e4813caf77b3a26c5528d8fc2  public/media/backgrounds/drone-2.webp
-657d0ca42e133b30cef70dc4481ff618bbfbc549a193ae48f36ae57c847734d5  public/media/backgrounds/drone-3.mp4
-08484a345aa292e0b15596cdb5572dc9ecc100e591503d89004252f29deacd74  public/media/backgrounds/drone-3.webp
-bba53a593c7132ce556ab8a08d39bd08b36121bbaef83b56b8844fdad154e10a  public/media/backgrounds/drone-4.mp4
-5e5dbf5be27fda977256e934eab25265750ee20b0d9e91b0ca073f338eb6947e  public/media/backgrounds/drone-4.webp
-c45d68a8b80522f960281c0d13a40daab1f22b2441372fd7b18a285097681407  public/media/photos/amana-mission.webp
-11ed24d1e3ccc9d3b9288c61c12f008c3db6daafecbe028bb560f67ed1497ed0  public/media/photos/borehole-img-2195.webp
-28ed5c618dbe94e0ee6f2e482ff7555b7947ae7e3c0ea80b269438308b4e37d1  public/media/photos/borehole-img-3731.webp
-f5ea7567883ef61be052a5dbb7981f66f9ccfc95ae922b6bec772baf7e313340  public/media/photos/day-dji-fly-20260823-072604-0787-1787508068146-pano.webp
-6dd898a2ff4634a0fc854183a8c625c4917e865efebbfbda89d50f1dcd1d18a9  public/media/photos/day-img-1992.webp
-1d94dcc9bcbe9f6fccc90fe1cfc88bfa37f456ce8d091369f7c54d76032c5fa1  public/media/photos/day-img-2001.webp
-0f9f95bd3979ea227e32dbb2935e8e2b4f27c943a3ca34471ede51873e70bef2  public/media/photos/day-img-2015.webp
-dfe42a09c614d87919a94e60cd5325fb17fb40e8b3a5d5c2762740c8662fdc71  public/media/photos/day-img-2024.webp
-19ccbcff7b85324010007871f46ef62ca4b3c3481c1e36427025286dd51023e7  public/media/photos/day-img-2026.webp
-35db23706ffce57ac9adec7ca4ebb67a57d048566a1fdaaf707ca2da7ac612dd  public/media/photos/day-img-2027.webp
-f874c8df2fd5d3e1fcdbe922927c7305bb7a1ba6ccbecf203ce854953332841b  public/media/photos/day-img-2028.webp
-933b4cad0d56f5d96dae1d0ef4b466fe2223ed610303b87531e45fae5033939c  public/media/photos/day-img-2029.webp
-10f76664634d1313a78f263049c4e4a875f40d23a0f72d8fe44d7b6db3882b61  public/media/photos/day-img-2035.webp
-ae1e47d510ba848846cd1cb4d2b68408b743554a5271a0f5d64924cc4520ab97  public/media/photos/day-img-2054.webp
-efa113e7d9c56ade85c36a4d32ea0c51dd83594b716921a4e4aa67f039c2ca20  public/media/photos/day-img-2059.webp
-3ddfc14fb86fb01c5eeb56c3e14aa338a6c32b4f87a706881c7add90d22fe11b  public/media/photos/day-img-2071.webp
-f31e20806f30e39e6ae55f252622047688fab61116e9aa10a25c7c4dfb63145d  public/media/photos/day-img-2080.webp
-62a0ca507baec78b697c60493719220f14eae7c12f0f6ef664a1ef066bfb4fe8  public/media/photos/day-img-2084.webp
-189d0b665eb9665c2ea2d15ff14552cc8b7195d08fc7cc191ae380691d964f53  public/media/photos/day-img-2085.webp
-013604439836f8e19cb51cd1aa88a5dc0e0188f0bb6eb94a2eb536dcebe961db  public/media/photos/day-img-2088.webp
-8bfadc8ebdf966c118c7434bd406934a8027e03c8ec2e457b191f2e9f05a337f  public/media/photos/day-img-2089.webp
-ae85c1b3eead421c4d9741fa9efa1bd06d563f7534468e5c4e278de75791baf4  public/media/photos/day-img-2091.webp
-d0ae441a9876c040249b601f3c3117015fba1f8fa553c8190adb106995f90900  public/media/photos/day-img-2095.webp
-c713a1daa5b6d390ae70bdcc8d1bce54654012879a53b6d61e3f6441011d510c  public/media/photos/day-img-2104.webp
-5a9999206ff9e43b1f1c42c662c2b0e3b72d8c3f632e8ef27d5987d7feb1886a  public/media/photos/day-img-2106.webp
-1138a117b65223439d81e9e81f0540f6cf3d5aabf028b84f819901112a0a1e4e  public/media/photos/day-img-2107.webp
-75e95c31f8945414ab0400940b5ec98714f64086d3e31e320299ba7b905600d6  public/media/photos/day-img-2108.webp
-1346c1cddcab278506b40d2221cef213c458ec0de15640e5fe34ab0dde56207d  public/media/photos/day-img-2109.webp
-440dd9b2835ad9256988b6026c5b16f7b4f9d5c0b1c586148fe58b78e3edf22d  public/media/photos/day-img-2113.webp
-3832b882a829a5e71ffb0d3358bf012c68bce3c6f1eb22f4a7ded4a83524c46c  public/media/photos/day-img-2129.webp
-e1904cc5b9ab3147252e87fbfe28cc27676cf244551dd15995c08eaa90f18fa8  public/media/photos/day-img-2130.webp
-c70172bfcd9003de5b0a850567200bda8e6c326ed122741fe622f5af887e6244  public/media/photos/day-img-2143.webp
-e84a90d05c3a5b4fec644106dc1a40ebe86d6886d5ab17b3819015301d134257  public/media/photos/day-img-2148.webp
-8e96b591df374e50f853280e102a98fe261e57843579a14c0717e420a881f70b  public/media/photos/day-img-2150.webp
-3b5ff586302453c39caabbd62dffb2e497169c4f925547f5a4a943b1e16e570b  public/media/photos/day-img-2166.webp
-5e83c906ecee77403bedeb4b3c11b44013a2154ef90f55085cfeec0f0fb6461c  public/media/photos/day-img-2169.webp
-82267222db5459afb25e0c281bc9c0629dcfd680c85303be022e1fefcdae9a8c  public/media/photos/day-img-2170.webp
-d94f846f9a1cef30bf30cde97acaa01f4bee28e448f9420f3f8e899825533441  public/media/photos/day-img-2193.webp
-9f51766ccc724e933e1cc8e6a6cdf6f7260fdcd817d848b3646199b8569d9d64  public/media/photos/day-img-2202.webp
-56f8646fd7e90ed11662745a2abc55712999dcbcc54676f19e87bace02b93de7  public/media/photos/day-img-2203.webp
-5e83e4f05229db35ceb4b3facf67aa87f05d6cc482b765a7da1ddcaf0347b7a2  public/media/photos/day-img-2205.webp
-88439f1a75d662351a908d728f6ed257a433d7aee9f47443a65cabfffe5de0cd  public/media/photos/day-img-2207.webp
-efc7987ec8e201143124869b735d24bd33fe72419bd7839b049db17ee31ca34c  public/media/photos/day-img-2208.webp
-c2a17a393931d19059b5aca0f7ebb910061643d2c8ef91d6c1a0bf697e815d67  public/media/photos/day-img-2214.webp
-deb5271b5a341eafb3eee045b3a627c957432a8fde8db163ef68d151a0e44899  public/media/photos/day-img-2219.webp
-47aaa37e06c0219cf44576676a633e8748f033508c62834990f476b446695840  public/media/photos/day-img-2234.webp
-69d7ca0a28da2bd0019f61b0ed78e335078cd7e7ccdb34786702a678bd1883ca  public/media/photos/day-img-2241.webp
-415f3c007779c2dabdcc1bc595da3a3402f316a527ac564176841972aff93f64  public/media/photos/day-img-2255.webp
-4e7d6b1240a4530b90d630871db55ce5d2f585bfe263001562b9ba3a4c513bd8  public/media/photos/day-img-2256.webp
-8e645bcaf8e9fe386e72b99d08dbd772524d2a59b56d415b4e1308481c814d21  public/media/photos/day-img-2258.webp
-20c270613e04565bf03c6b4cdff0675332d629ae1139f50eb6dd00eaefa33983  public/media/photos/day-img-2291.webp
-36c3992cc5607b719c23158a29cb2f34a0f21ea6656e4616c8ac5c0558ba1a5d  public/media/photos/day-img-2292.webp
-7fee14eb3e6b61a2a41bbe3ec2881d8e6b52487852cec95acffcae66b93b7c66  public/media/photos/day-img-3767.webp
-ed32ff4d8d092060b1f161dd7f0004427b8f480699e53d86d43ac85e4693956c  public/media/photos/day-img-3768.webp
-96779bffe7316b1d3240de056dfcf580b3ef7eca5b163cb0493d70263145f008  public/media/photos/day-img-3776.webp
-de8e8d6f869557a0d4f2ebae1ab1327811870ad1d23ee8ba682b34777960a7c8  public/media/photos/day-img-3780.webp
-26b1a6f4a46684862545b5a5c065716348fa20c3ab7b5691924a23df83d8cc62  public/media/photos/fellowship-group-extra.webp
-7fbadfd0bf102bd6ac727f895674e828060a26bd2ed20c0c57695ee0b4ab8e11  public/media/photos/fireside-dji-fly-20260822-214234-0762-1787508212876-photo.webp
-0d11294fd04fe2694d4178f4e1d720a259582dc61fabd9b092f8b001df11c0f9  public/media/photos/fireside-img-3733.webp
-7b7103bc38526abbe6d3605af88d65250ea7970ac31b12c07119fed8d6125bde  public/media/photos/fireside-img-3735.webp
-0c72da03503a2d8c5a324569a296bc35bfd198ba8a5549411eed2392a3e437f9  public/media/photos/groups-dji-fly-20260822-170728-0746-1787508236179-photo.webp
-b88d5a89929ee07e614b2beceb01b70e5c19f6b94a8ef502b0d0c73af90a24db  public/media/photos/groups-dji-fly-20260822-170756-0747-1787508235850-photo.webp
-14b0952139385d863c0192e427bb09a733916f935e006f566484d69369d6d6db  public/media/photos/groups-img-2176.webp
-ab0e27794c2cfadbb44f32041908ad5601cf181416bf24a0270c4c3e674fb1b8  public/media/photos/groups-img-2177.webp
-a1a2a3fb2d34ff1fe52c6d9bbd3e319bfd7d4a6573ec61d02ded920f1e5933df  public/media/songs/song-1.mp4
-3ee6fe4934f40ea80e57681909c3111a03a06910739e2cd5a5eed95c5b49c1e7  public/media/songs/song-1.webp
-5c15f313c4fb0373a240f6a4c8d3dfeaa29135cb3d92a09311991d2b4494c249  public/media/songs/song-2.mp4
-482d308092c47343e2e3e8c632b3b4d8300567aad7d18b7bb2252fffc72a97d1  public/media/songs/song-2.webp
-43e23d0b1af2fa5dbfe39aa19c3d60ee498a583fe4a5350ee511fa0ca71d2866  public/media/songs/song-4.mp4
-b62b1db3c81717a60e27b9b3ea475dcedd55b740435ad060346e61923d454805  public/media/songs/song-4.webp
-adb5c723b192d76a17fad634204849ff899682e1e6fbd4d147524d85d19c9562  public/media/songs/song-5.mp4
-ca0666174fc9ed3d10a1ae2186139f145a5b2295d5562c96e60dc1e9d98bd3b4  public/media/songs/song-5.webp
-f7629f9d489363c5acb3faa7537d19708114aebc00225fb406c4f80766c9e277  public/media/songs/song-6.mp4
-63d481d2ea5e39adb8049f4339d509229b0c3058bb7ae8532ddb2cf070443d52  public/media/songs/song-6.webp
-8468c7c455a5dce7ac7d8c34c1b82bc0a0ed8b9e01fd96eb21bf6cd262cb15e0  public/media/video/hero-amana-poster.webp
-c786e5b74c7941a4f0c13c7443d21d54ffeca8b96dab74d48632f19be95929fd  public/media/video/hero-amana.mp4
-f265969091d7a1161499a08c437e3738bf3d0beab4f04dff0118225e2ae3062e  public/media/video/saturday-evening.mp4
-b92e98cde38c6e630cc03dc7d77ddc64d522b730232bb9c9b87af2217ccd6c08  public/media/video/saturday-evening.webp
-decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66  public/window.svg
-ASSETS
+          69b53d5ff26b260efbc859887112a1be8ffc851c335befa3c47a2d3ae9aa53bf  public/assets/brand/logo.jpg
+          2a28086f29f140828e2c1e03629a5d8306000c456453a9e6d25cf4ccfadb9a2d  public/assets/favicons/favicon.ico
+          e21c5357ee6583efc20eb2c6c3926dfd89554a327cd2ea00518c9b3b7ca4f12a  public/assets/footer/city-skyline-reference.png
+          2a28086f29f140828e2c1e03629a5d8306000c456453a9e6d25cf4ccfadb9a2d  public/favicon.ico
+          e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7  public/favicon.svg
+          1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307  public/file.svg
+          d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9  public/globe.svg
+          1f85ed3ee252673f7baa4d78eaf55df6b78c2f24d692433265063c5b17d79fff  public/media/backgrounds/drone-1.mp4
+          11e9d26c1d3c8b12b1a495ac76593abeea2f6f71f9a3315075316896f465f616  public/media/backgrounds/drone-1.webp
+          4c87465374070242a200275bebbb8046afe9e961fb08c89cde7cfa97162bc396  public/media/backgrounds/drone-2.mp4
+          bd869be6e158391f4d5f5eebf9b71236be0c0c7e4813caf77b3a26c5528d8fc2  public/media/backgrounds/drone-2.webp
+          657d0ca42e133b30cef70dc4481ff618bbfbc549a193ae48f36ae57c847734d5  public/media/backgrounds/drone-3.mp4
+          08484a345aa292e0b15596cdb5572dc9ecc100e591503d89004252f29deacd74  public/media/backgrounds/drone-3.webp
+          bba53a593c7132ce556ab8a08d39bd08b36121bbaef83b56b8844fdad154e10a  public/media/backgrounds/drone-4.mp4
+          5e5dbf5be27fda977256e934eab25265750ee20b0d9e91b0ca073f338eb6947e  public/media/backgrounds/drone-4.webp
+          c45d68a8b80522f960281c0d13a40daab1f22b2441372fd7b18a285097681407  public/media/photos/amana-mission.webp
+          11ed24d1e3ccc9d3b9288c61c12f008c3db6daafecbe028bb560f67ed1497ed0  public/media/photos/borehole-img-2195.webp
+          28ed5c618dbe94e0ee6f2e482ff7555b7947ae7e3c0ea80b269438308b4e37d1  public/media/photos/borehole-img-3731.webp
+          f5ea7567883ef61be052a5dbb7981f66f9ccfc95ae922b6bec772baf7e313340  public/media/photos/day-dji-fly-20260823-072604-0787-1787508068146-pano.webp
+          6dd898a2ff4634a0fc854183a8c625c4917e865efebbfbda89d50f1dcd1d18a9  public/media/photos/day-img-1992.webp
+          1d94dcc9bcbe9f6fccc90fe1cfc88bfa37f456ce8d091369f7c54d76032c5fa1  public/media/photos/day-img-2001.webp
+          0f9f95bd3979ea227e32dbb2935e8e2b4f27c943a3ca34471ede51873e70bef2  public/media/photos/day-img-2015.webp
+          dfe42a09c614d87919a94e60cd5325fb17fb40e8b3a5d5c2762740c8662fdc71  public/media/photos/day-img-2024.webp
+          19ccbcff7b85324010007871f46ef62ca4b3c3481c1e36427025286dd51023e7  public/media/photos/day-img-2026.webp
+          35db23706ffce57ac9adec7ca4ebb67a57d048566a1fdaaf707ca2da7ac612dd  public/media/photos/day-img-2027.webp
+          f874c8df2fd5d3e1fcdbe922927c7305bb7a1ba6ccbecf203ce854953332841b  public/media/photos/day-img-2028.webp
+          933b4cad0d56f5d96dae1d0ef4b466fe2223ed610303b87531e45fae5033939c  public/media/photos/day-img-2029.webp
+          10f76664634d1313a78f263049c4e4a875f40d23a0f72d8fe44d7b6db3882b61  public/media/photos/day-img-2035.webp
+          ae1e47d510ba848846cd1cb4d2b68408b743554a5271a0f5d64924cc4520ab97  public/media/photos/day-img-2054.webp
+          efa113e7d9c56ade85c36a4d32ea0c51dd83594b716921a4e4aa67f039c2ca20  public/media/photos/day-img-2059.webp
+          3ddfc14fb86fb01c5eeb56c3e14aa338a6c32b4f87a706881c7add90d22fe11b  public/media/photos/day-img-2071.webp
+          f31e20806f30e39e6ae55f252622047688fab61116e9aa10a25c7c4dfb63145d  public/media/photos/day-img-2080.webp
+          62a0ca507baec78b697c60493719220f14eae7c12f0f6ef664a1ef066bfb4fe8  public/media/photos/day-img-2084.webp
+          189d0b665eb9665c2ea2d15ff14552cc8b7195d08fc7cc191ae380691d964f53  public/media/photos/day-img-2085.webp
+          013604439836f8e19cb51cd1aa88a5dc0e0188f0bb6eb94a2eb536dcebe961db  public/media/photos/day-img-2088.webp
+          8bfadc8ebdf966c118c7434bd406934a8027e03c8ec2e457b191f2e9f05a337f  public/media/photos/day-img-2089.webp
+          ae85c1b3eead421c4d9741fa9efa1bd06d563f7534468e5c4e278de75791baf4  public/media/photos/day-img-2091.webp
+          d0ae441a9876c040249b601f3c3117015fba1f8fa553c8190adb106995f90900  public/media/photos/day-img-2095.webp
+          c713a1daa5b6d390ae70bdcc8d1bce54654012879a53b6d61e3f6441011d510c  public/media/photos/day-img-2104.webp
+          5a9999206ff9e43b1f1c42c662c2b0e3b72d8c3f632e8ef27d5987d7feb1886a  public/media/photos/day-img-2106.webp
+          1138a117b65223439d81e9e81f0540f6cf3d5aabf028b84f819901112a0a1e4e  public/media/photos/day-img-2107.webp
+          75e95c31f8945414ab0400940b5ec98714f64086d3e31e320299ba7b905600d6  public/media/photos/day-img-2108.webp
+          1346c1cddcab278506b40d2221cef213c458ec0de15640e5fe34ab0dde56207d  public/media/photos/day-img-2109.webp
+          440dd9b2835ad9256988b6026c5b16f7b4f9d5c0b1c586148fe58b78e3edf22d  public/media/photos/day-img-2113.webp
+          3832b882a829a5e71ffb0d3358bf012c68bce3c6f1eb22f4a7ded4a83524c46c  public/media/photos/day-img-2129.webp
+          e1904cc5b9ab3147252e87fbfe28cc27676cf244551dd15995c08eaa90f18fa8  public/media/photos/day-img-2130.webp
+          c70172bfcd9003de5b0a850567200bda8e6c326ed122741fe622f5af887e6244  public/media/photos/day-img-2143.webp
+          e84a90d05c3a5b4fec644106dc1a40ebe86d6886d5ab17b3819015301d134257  public/media/photos/day-img-2148.webp
+          8e96b591df374e50f853280e102a98fe261e57843579a14c0717e420a881f70b  public/media/photos/day-img-2150.webp
+          3b5ff586302453c39caabbd62dffb2e497169c4f925547f5a4a943b1e16e570b  public/media/photos/day-img-2166.webp
+          5e83c906ecee77403bedeb4b3c11b44013a2154ef90f55085cfeec0f0fb6461c  public/media/photos/day-img-2169.webp
+          82267222db5459afb25e0c281bc9c0629dcfd680c85303be022e1fefcdae9a8c  public/media/photos/day-img-2170.webp
+          d94f846f9a1cef30bf30cde97acaa01f4bee28e448f9420f3f8e899825533441  public/media/photos/day-img-2193.webp
+          9f51766ccc724e933e1cc8e6a6cdf6f7260fdcd817d848b3646199b8569d9d64  public/media/photos/day-img-2202.webp
+          56f8646fd7e90ed11662745a2abc55712999dcbcc54676f19e87bace02b93de7  public/media/photos/day-img-2203.webp
+          5e83e4f05229db35ceb4b3facf67aa87f05d6cc482b765a7da1ddcaf0347b7a2  public/media/photos/day-img-2205.webp
+          88439f1a75d662351a908d728f6ed257a433d7aee9f47443a65cabfffe5de0cd  public/media/photos/day-img-2207.webp
+          efc7987ec8e201143124869b735d24bd33fe72419bd7839b049db17ee31ca34c  public/media/photos/day-img-2208.webp
+          c2a17a393931d19059b5aca0f7ebb910061643d2c8ef91d6c1a0bf697e815d67  public/media/photos/day-img-2214.webp
+          deb5271b5a341eafb3eee045b3a627c957432a8fde8db163ef68d151a0e44899  public/media/photos/day-img-2219.webp
+          47aaa37e06c0219cf44576676a633e8748f033508c62834990f476b446695840  public/media/photos/day-img-2234.webp
+          69d7ca0a28da2bd0019f61b0ed78e335078cd7e7ccdb34786702a678bd1883ca  public/media/photos/day-img-2241.webp
+          415f3c007779c2dabdcc1bc595da3a3402f316a527ac564176841972aff93f64  public/media/photos/day-img-2255.webp
+          4e7d6b1240a4530b90d630871db55ce5d2f585bfe263001562b9ba3a4c513bd8  public/media/photos/day-img-2256.webp
+          8e645bcaf8e9fe386e72b99d08dbd772524d2a59b56d415b4e1308481c814d21  public/media/photos/day-img-2258.webp
+          20c270613e04565bf03c6b4cdff0675332d629ae1139f50eb6dd00eaefa33983  public/media/photos/day-img-2291.webp
+          36c3992cc5607b719c23158a29cb2f34a0f21ea6656e4616c8ac5c0558ba1a5d  public/media/photos/day-img-2292.webp
+          7fee14eb3e6b61a2a41bbe3ec2881d8e6b52487852cec95acffcae66b93b7c66  public/media/photos/day-img-3767.webp
+          ed32ff4d8d092060b1f161dd7f0004427b8f480699e53d86d43ac85e4693956c  public/media/photos/day-img-3768.webp
+          96779bffe7316b1d3240de056dfcf580b3ef7eca5b163cb0493d70263145f008  public/media/photos/day-img-3776.webp
+          de8e8d6f869557a0d4f2ebae1ab1327811870ad1d23ee8ba682b34777960a7c8  public/media/photos/day-img-3780.webp
+          26b1a6f4a46684862545b5a5c065716348fa20c3ab7b5691924a23df83d8cc62  public/media/photos/fellowship-group-extra.webp
+          7fbadfd0bf102bd6ac727f895674e828060a26bd2ed20c0c57695ee0b4ab8e11  public/media/photos/fireside-dji-fly-20260822-214234-0762-1787508212876-photo.webp
+          0d11294fd04fe2694d4178f4e1d720a259582dc61fabd9b092f8b001df11c0f9  public/media/photos/fireside-img-3733.webp
+          7b7103bc38526abbe6d3605af88d65250ea7970ac31b12c07119fed8d6125bde  public/media/photos/fireside-img-3735.webp
+          0c72da03503a2d8c5a324569a296bc35bfd198ba8a5549411eed2392a3e437f9  public/media/photos/groups-dji-fly-20260822-170728-0746-1787508236179-photo.webp
+          b88d5a89929ee07e614b2beceb01b70e5c19f6b94a8ef502b0d0c73af90a24db  public/media/photos/groups-dji-fly-20260822-170756-0747-1787508235850-photo.webp
+          14b0952139385d863c0192e427bb09a733916f935e006f566484d69369d6d6db  public/media/photos/groups-img-2176.webp
+          ab0e27794c2cfadbb44f32041908ad5601cf181416bf24a0270c4c3e674fb1b8  public/media/photos/groups-img-2177.webp
+          a1a2a3fb2d34ff1fe52c6d9bbd3e319bfd7d4a6573ec61d02ded920f1e5933df  public/media/songs/song-1.mp4
+          3ee6fe4934f40ea80e57681909c3111a03a06910739e2cd5a5eed95c5b49c1e7  public/media/songs/song-1.webp
+          5c15f313c4fb0373a240f6a4c8d3dfeaa29135cb3d92a09311991d2b4494c249  public/media/songs/song-2.mp4
+          482d308092c47343e2e3e8c632b3b4d8300567aad7d18b7bb2252fffc72a97d1  public/media/songs/song-2.webp
+          43e23d0b1af2fa5dbfe39aa19c3d60ee498a583fe4a5350ee511fa0ca71d2866  public/media/songs/song-4.mp4
+          b62b1db3c81717a60e27b9b3ea475dcedd55b740435ad060346e61923d454805  public/media/songs/song-4.webp
+          adb5c723b192d76a17fad634204849ff899682e1e6fbd4d147524d85d19c9562  public/media/songs/song-5.mp4
+          ca0666174fc9ed3d10a1ae2186139f145a5b2295d5562c96e60dc1e9d98bd3b4  public/media/songs/song-5.webp
+          f7629f9d489363c5acb3faa7537d19708114aebc00225fb406c4f80766c9e277  public/media/songs/song-6.mp4
+          63d481d2ea5e39adb8049f4339d509229b0c3058bb7ae8532ddb2cf070443d52  public/media/songs/song-6.webp
+          8468c7c455a5dce7ac7d8c34c1b82bc0a0ed8b9e01fd96eb21bf6cd262cb15e0  public/media/video/hero-amana-poster.webp
+          c786e5b74c7941a4f0c13c7443d21d54ffeca8b96dab74d48632f19be95929fd  public/media/video/hero-amana.mp4
+          f265969091d7a1161499a08c437e3738bf3d0beab4f04dff0118225e2ae3062e  public/media/video/saturday-evening.mp4
+          b92e98cde38c6e630cc03dc7d77ddc64d522b730232bb9c9b87af2217ccd6c08  public/media/video/saturday-evening.webp
+          decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66  public/window.svg
+          ASSETS
 
           test "$(find public -type f | wc -l)" -eq 94
 
