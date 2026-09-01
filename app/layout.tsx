@@ -5,7 +5,8 @@ const siteUrl = "https://amana-aug-2026.truechristian.church";
 const title = "Amana Aug 2026 Camp Meeting";
 const description =
   "A visual record of fellowship, worship and biblical teaching at Amana Mission in northern Namibia, 21–23 August 2026.";
-const socialImage = "/assets/social/true-christian-logo-250-v2.png";
+const socialImage = "/assets/social/true-christian-share-600-v3.png";
+const socialImageAbsolute = `${siteUrl}${socialImage}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -30,9 +31,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: socialImage,
-        secureUrl: `${siteUrl}${socialImage}`,
-        width: 250,
-        height: 250,
+        secureUrl: socialImageAbsolute,
+        width: 600,
+        height: 600,
         type: "image/png",
         alt: "A True Christian Church",
       },
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary",
     title,
     description,
-    images: [socialImage],
+    images: [{ url: socialImage, alt: "A True Christian Church" }],
   },
 };
 
@@ -54,6 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta property="og:image:secure_url" content={socialImageAbsolute} />
+        <link rel="image_src" href={socialImageAbsolute} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@400&display=swap" rel="stylesheet" />
