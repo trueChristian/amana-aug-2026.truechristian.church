@@ -5,7 +5,7 @@ const siteUrl = "https://amana-aug-2026.truechristian.church";
 const title = "Amana Aug 2026 Camp Meeting";
 const description =
   "A visual record of fellowship, worship and biblical teaching at Amana Mission in northern Namibia, 21–23 August 2026.";
-const socialImage = "/assets/social/true-christian-share-600-v3.png";
+const socialImage = "/assets/social/true-christian-icon-114-v4.png";
 const socialImageAbsolute = `${siteUrl}${socialImage}`;
 
 export const metadata: Metadata = {
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
       {
         url: socialImage,
         secureUrl: socialImageAbsolute,
-        width: 600,
-        height: 600,
+        width: 114,
+        height: 114,
         type: "image/png",
         alt: "A True Christian Church",
       },
