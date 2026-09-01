@@ -29,14 +29,15 @@ test("renders complete social preview metadata", async () => {
   );
   const html = await response.text();
   assert.match(html, /<link[^>]+rel="canonical"[^>]+href="https:\/\/amana-aug-2026\.truechristian\.church\/"/i);
-  assert.match(html, /<meta[^>]+property="og:image"[^>]+content="https:\/\/amana-aug-2026\.truechristian\.church\/assets\/social\/amana-aug-2026-camp-meeting\.jpg"/i);
-  assert.match(html, /<meta[^>]+property="og:image:width"[^>]+content="1200"/i);
-  assert.match(html, /<meta[^>]+property="og:image:height"[^>]+content="630"/i);
-  assert.match(html, /<meta[^>]+property="og:image:type"[^>]+content="image\/jpeg"/i);
-  assert.match(html, /<meta[^>]+name="twitter:card"[^>]+content="summary_large_image"/i);
+  assert.match(html, /<meta[^>]+property="og:image"[^>]+content="https:\/\/amana-aug-2026\.truechristian\.church\/assets\/social\/true-christian-logo-250-v2\.png"/i);
+  assert.match(html, /<meta[^>]+property="og:image:width"[^>]+content="250"/i);
+  assert.match(html, /<meta[^>]+property="og:image:height"[^>]+content="250"/i);
+  assert.match(html, /<meta[^>]+property="og:image:type"[^>]+content="image\/png"/i);
+  assert.match(html, /<meta[^>]+name="twitter:card"[^>]+content="summary"/i);
+  assert.match(html, /<link[^>]+rel="apple-touch-icon"[^>]+href="https:\/\/amana-aug-2026\.truechristian\.church\/assets\/favicons\/apple-touch-icon\.png"/i);
 });
 
-test("ships the social preview image as a JPEG", async () => {
-  const image = await readFile(new URL("../public/assets/social/amana-aug-2026-camp-meeting.jpg", import.meta.url));
-  assert.deepEqual(Array.from(image.subarray(0, 3)), [0xff, 0xd8, 0xff]);
+test("ships the social preview image as a PNG", async () => {
+  const image = await readFile(new URL("../public/assets/social/true-christian-logo-250-v2.png", import.meta.url));
+  assert.deepEqual(Array.from(image.subarray(0, 4)), [0x89, 0x50, 0x4e, 0x47]);
 });

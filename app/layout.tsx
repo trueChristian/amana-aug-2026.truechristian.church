@@ -5,7 +5,7 @@ const siteUrl = "https://amana-aug-2026.truechristian.church";
 const title = "Amana Aug 2026 Camp Meeting";
 const description =
   "A visual record of fellowship, worship and biblical teaching at Amana Mission in northern Namibia, 21–23 August 2026.";
-const socialImage = "/assets/social/amana-aug-2026-camp-meeting.jpg";
+const socialImage = "/assets/social/true-christian-logo-250-v2.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/favicons/favicon.ico",
     shortcut: "/assets/favicons/favicon.ico",
+    apple: "/assets/favicons/apple-touch-icon.png",
   },
   openGraph: {
     type: "website",
@@ -30,15 +31,15 @@ export const metadata: Metadata = {
       {
         url: socialImage,
         secureUrl: `${siteUrl}${socialImage}`,
-        width: 1200,
-        height: 630,
-        type: "image/jpeg",
-        alt: "More than 100 people gathered for the Amana Aug 2026 Camp Meeting",
+        width: 250,
+        height: 250,
+        type: "image/png",
+        alt: "A True Christian Church",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description,
     images: [socialImage],
