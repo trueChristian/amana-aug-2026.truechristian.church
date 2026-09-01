@@ -59,9 +59,8 @@
   z-index: 1000;
   top: 0;
   color: var(--tcc-color-ink);
-  transform: translateY(0);
+  transform: none;
   transition: transform 220ms ease;
-  will-change: transform;
 }
 
 .tcc-site-header[data-scroll-hidden="true"] {
@@ -70,7 +69,7 @@
 
 .tcc-site-header[data-menu-open="true"],
 .tcc-site-header:focus-within {
-  transform: translateY(0);
+  transform: none;
 }
 
 .tcc-header__container {
@@ -282,29 +281,51 @@
   }
 
   .tcc-header__container {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
     min-height: 80px;
-    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .tcc-header__brand {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    justify-self: center;
   }
 
   .tcc-header__brand img {
-    width: min(240px, 66vw);
+    width: min(220px, 100%);
     height: auto;
   }
 
   .tcc-header__toggle {
-    position: absolute;
-    left: 1rem;
+    position: static;
+    grid-column: 1;
+    grid-row: 1;
     display: inline-grid;
     place-items: center;
+    justify-self: start;
+    padding: 0;
+  }
+
+  .tcc-header__toggle svg,
+  .tcc-header__close svg {
+    width: 24px;
+    height: 24px;
   }
 
   .tcc-header__navigation {
     position: fixed;
     z-index: 1001;
     inset: 0 auto 0 0;
-    width: min(88vw, 360px);
-    padding: 6rem 2rem 2rem;
+    width: min(100vw, 420px);
+    height: 100dvh;
+    min-height: 100dvh;
+    padding: 4rem 1.25rem 1rem;
     overflow-y: auto;
+    overscroll-behavior: contain;
     background: var(--tcc-color-white);
     box-shadow: var(--tcc-shadow-medium);
     visibility: hidden;
@@ -322,7 +343,7 @@
 
   .tcc-header__close {
     position: absolute;
-    top: 1rem;
+    top: .625rem;
     right: 1rem;
     display: inline-grid;
     width: 44px;
@@ -331,7 +352,6 @@
     border: 0;
     background: transparent;
     color: var(--tcc-color-ink);
-    font-size: 1.75rem;
     line-height: 1;
     cursor: pointer;
   }
@@ -360,14 +380,18 @@
   .tcc-header__menu {
     display: grid;
     align-items: stretch;
-    gap: 0.4rem;
+    gap: 0;
   }
 
   .tcc-header__menu > li > a,
   .tcc-header__menu > li > button {
     width: 100%;
+    min-height: 44px;
     justify-content: flex-start;
-    padding-inline: 0;
+    border-bottom: 1px solid var(--tcc-color-border);
+    padding-inline: .25rem;
+    font-size: .75rem;
+    font-weight: 500;
     white-space: normal;
   }
 
@@ -387,6 +411,10 @@
 @media (max-width: 639px) {
   .tcc-container {
     width: min(calc(100% - 2rem), var(--tcc-container-max));
+  }
+
+  .tcc-header__navigation {
+    width: 100vw;
   }
 
   .tcc-footer-directory {
