@@ -1,13 +1,47 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteUrl = "https://amana-aug-2026.truechristian.church";
+const title = "Amana Aug 2026 Camp Meeting";
+const description =
+  "A visual record of fellowship, worship and biblical teaching at Amana Mission in northern Namibia, 21–23 August 2026.";
+const socialImage = "/assets/social/amana-aug-2026-camp-meeting.jpg";
+
 export const metadata: Metadata = {
-  title: "Amana Aug 2026 Camp Meeting",
-  description:
-    "A visual record of fellowship, worship and biblical teaching at Amana Mission in northern Namibia, 21–23 August 2026.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  applicationName: "A True Christian Church",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/assets/favicons/favicon.ico",
     shortcut: "/assets/favicons/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "A True Christian Church",
+    title,
+    description,
+    images: [
+      {
+        url: socialImage,
+        secureUrl: `${siteUrl}${socialImage}`,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: "More than 100 people gathered for the Amana Aug 2026 Camp Meeting",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [socialImage],
   },
 };
 

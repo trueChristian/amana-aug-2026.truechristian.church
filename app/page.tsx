@@ -11,11 +11,13 @@ import {
   Heart,
   Images,
   MapPin,
+  Menu,
   Music2,
   Pause,
   Play,
   Users,
   Video,
+  X,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -417,13 +419,13 @@ function GlobalHeader({ onOpenVideos }: { onOpenVideos: () => void }) {
         </a>
 
         <button ref={toggleRef} className="tcc-header__toggle" type="button" aria-controls="tcc-primary-navigation" aria-expanded={menuOpen} onClick={() => { if (window.matchMedia("(max-width: 959px)").matches) setMenuOpen((current) => !current); }}>
-          <span className="tcc-visually-hidden">Open menu</span>
-          <span aria-hidden="true">☰</span>
+          <span className="tcc-visually-hidden">{menuOpen ? "Close menu" : "Open menu"}</span>
+          <Menu aria-hidden="true" />
         </button>
 
         <nav ref={navigationRef} id="tcc-primary-navigation" className="tcc-header__navigation" aria-label="Primary navigation" aria-hidden={isMobile && !menuOpen ? true : undefined} inert={isMobile && !menuOpen ? true : undefined}>
           <button ref={closeRef} className="tcc-header__close" type="button" aria-label="Close menu" onClick={() => closeMenu(true)}>
-            <span aria-hidden="true">×</span>
+            <X aria-hidden="true" />
           </button>
           <ul className="tcc-header__menu uk-navbar-nav">
             <li><a href="https://truechristian.church/" onClick={() => closeMenu()}>Home</a></li>
